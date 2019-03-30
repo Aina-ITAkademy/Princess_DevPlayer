@@ -1,0 +1,779 @@
+/*/////////////
+// Mes fonts //
+/////////////*/
+@font-face {
+    font-family: "atarian_bold";
+    src: url('../font/Atarian/sf_atarian_system_bold.ttf');
+}
+
+@font-face {
+    font-family: "super_smash";
+    src: url('../font/super_smash/super_smash_4_1_by_pokemon_diamond-d7zxu6d.ttf');
+}
+
+@font-face {
+    font-family: "paper_mario";
+    src: url('../font/paper_mario_font/FOT-PopJoyStd-B.otf');
+}
+
+@font-face {
+    font-family: "pokemonSM";
+    src: url('../font/pokemonSM/pokemonSM_font.ttf');
+}
+
+@font-face {
+    font-family: "zelda";
+    src:url('../font/zelda/HyliaSerifBeta-Regular.otf')
+}
+
+@font-face {
+    font-family:"imc";
+    src:url('../font/imc/imcm_original.ttf')
+}
+
+.fontIMC {
+    font-family: 'imc', sans-serif;
+}
+.fontZelda {
+    font-family: 'zelda',sans-serif;
+}
+.fontSmash {
+    font-family: 'super_smash',sans-serif;
+}
+.fontAtarian {
+    font-family: 'atarian_bold',sans-serif;
+}
+/*//////////////////
+// Titres et body //
+//////////////////*/
+
+body {
+    
+    /* font-family: 'Montserrat', sans-serif; */
+    /* font-family: atarian_bold; */
+    /* font-family: 'Press Start 2P', cursive; */
+    /* font-family: 'Poppins', sans-serif; */
+}
+
+
+h1 {
+    color:black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+
+h3 {
+    color:rgb(41, 39, 39);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+
+/*////////////////////
+// Class utilitaire //
+////////////////////*/
+
+.font_super_smash {
+    font-family: super_smash,sans-serif;
+}
+
+.font_paper_mario {
+    font-family: paper_mario,cursive;
+}
+
+.font_pokemonSM {
+    font-family: pokemonSM,sans-serif;
+}
+
+.font_atarian{
+    font-family: atarian_bold,sans-serif;
+}
+
+.ColorWhite {
+    color: white;
+}
+
+.ColorBlack {
+    color:rgb(41, 39, 39);
+}
+
+.BackgroundColor_Black {
+    background-color: rgb(41, 39, 39);
+}
+.BackgroundColor_White {
+    background-color: white;
+}
+
+.PosAbsolute {
+    position: absolute;
+}
+.PosFixed {
+    position: fixed;
+}
+
+.DisplayNone {
+    display: none;
+}
+
+.Invisible {
+    visibility: hidden;
+}
+.Visible {
+    visibility: initial;
+}
+
+.DispNone {
+    display:none;
+}
+
+footer {
+    background-color: grey;
+}
+/*//////////////////
+// HEADER + INTRO // 
+//////////////////*/
+
+/* Header et son contenu */
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    z-index: 999;
+    /* position: fixed; */
+    /* position: absolute; */
+    width:100vw;
+    /* color: white; */
+    margin:0px;
+    color: white;
+   
+}
+
+.HeaderAbsolute {
+    
+}
+
+.HeaderFixed {
+    position: fixed;
+}
+
+
+#DivMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+#BurgerMenu {
+    cursor: pointer;   
+    margin-right: 15px;
+}
+.BurgerSize {
+    font-size: 2em;
+}
+
+
+#TitlePrincess {
+    display:flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: large;
+    margin-left: 10px;
+    margin-top: 10px;
+    /* color: white; */
+}
+#NavMenu {
+    width:100vw;  
+    /* background-color: red; */
+    margin-right: 10px;
+    /* color: white; */
+}
+#NavMenu ul {
+    display:flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin:0px;
+    
+    padding: 0px;
+}
+
+#NavMenu ul li {
+    list-style: none;
+    padding: 10px;
+    /* font-family: 'Poppins', sans-serif; */
+    font-weight: 900;
+    /* color: white; */
+}
+
+#NavMenu a {
+    color:inherit;
+    width: 100%;
+    text-align: center;
+}
+ /* unvisited link */
+a:link {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: inherit;
+    background-color: grey;
+    text-decoration: none;
+}
+
+/* selected link */
+a:active {
+    color: inherit;
+    text-decoration: none;
+} 
+
+#NavMenu {
+    /* display: none; */
+}
+/* Image et text intro  */
+#SectionIntro {
+    background-color: black;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../img/custom_img/smashFinalMap.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:white;
+    width:100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    margin:0px;
+}
+
+#SectionIntro h1 {
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    
+}
+#TextIntro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+#ReseauxDiv {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 5px;
+    font-size: 1.5em;
+}
+
+#ReseauxDiv i{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+/*////////////
+// AboutMe  // 
+////////////*/
+
+
+
+#SectionAboutMe {
+    /* background-color: Snow ; */
+    /* background-color: rgb(202, 202, 240); */
+    background-color: rgb(238, 218, 188);
+    display: flex;
+    flex-direction: column;
+    width:100vw;
+    min-height: 100vh;
+
+}
+
+
+#AboutMeImg{
+    /* height: 100vh; */
+    /* border: solid; */
+    background-image: url("../img/custom_img/Bowser.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; 
+    
+    /* width:auto;  */
+    /* max-width:100% ; */
+    margin:0px;
+}
+
+#AboutMeDiv {
+    /* height: 100vh; */
+    
+}
+
+/* Textes de AboutME */
+#AboutMeTxt {
+    /* color:gray; */
+    /* width: 90vw; */
+    padding: 10px;
+}
+
+#AboutMeTxt h1 {
+    color:black;
+}
+
+#AboutMeTxt h3 {
+    /* color:gray; */
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.boldSpan{
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* Les skillBars */
+#AboutMeSkill{
+    color:white;
+    display: flex;
+    flex-direction: column;
+    /* width: 100vw; */
+    width: 100%;
+    margin:0px;
+    
+}
+.DivBackground_back {
+    background-color: silver;
+    border-radius: 5px;
+    width:95%;
+    margin:5px;
+   
+}
+.DivBackground_front {
+    background-color: rgb(41, 39, 39);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    font-weight: bold;
+
+}
+.DivBackground_front span {
+    margin-right: 5px;
+    margin-left: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+.w95 {
+    width: 95%;
+    animation-name: Anim_width95;
+    animation-duration: 4s;
+}
+
+.w90 {
+    width: 90%;
+    animation-name: Anim_width90;
+    animation-duration: 4s;
+}
+.w80 {
+    width: 80%;
+    animation-name: Anim_width80;
+    animation-duration: 4s;
+}
+
+.animation-pause {
+    animation-play-state: paused;
+}
+
+.animation-start {
+    animation-play-state: running;
+}
+@keyframes Anim_width95 {
+    from {width: 30%;}
+    to {width: 95%;}
+}
+
+@keyframes Anim_width80 {
+    from {width: 10%;}
+    to {width: 80%;}
+}
+
+@keyframes Anim_width90 {
+    from {width: 10%;}
+    to {width: 90%;}
+}
+
+/* Les "Boutons" de section skill*/
+#AboutMeButtons {
+    display: flex;
+    padding: 5px;
+    flex-wrap: nowrap;
+    height: auto;
+}
+
+.AboutMeButtons_div {
+    margin:10px;
+    /* width: 100vw; */
+
+    border-radius: 5px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#ButtonCV {
+    background-color: rgb(41, 39, 39);
+    color:white;
+    border-style: solid;
+    border-color: rgb(41, 39, 39);
+}
+
+#ButtonCV:hover {
+    background-color: white ;
+    border-color: rgb(41, 39, 39);
+    color:rgb(41, 39, 39);
+}
+
+#ButtonContact {
+    background-color: white ;
+    color:rgb(41, 39, 39);
+    border-style: solid;
+}
+
+#ButtonContact:hover {
+    background-color: rgb(41, 39, 39);
+    border-color: rgb(41, 39, 39);
+    color:white;
+}
+
+
+
+
+/*////////////
+// Services //
+////////////*/
+
+#SectionService{
+    /* background-color: lightgrey; */
+    background-color: rgb(202, 202, 240);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    min-height: 100vh;
+}
+
+#SectionService_Title{
+    display: flex;
+    justify-content: center;
+    height: 35vh;
+}
+
+#SectionService_Title h1 {
+    color: Black;
+}
+
+.ServiceDiv {
+    background-color: white;
+    padding:5px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 35vh;
+    border-radius: 5px;
+    box-shadow: 0px 5px 5px 0px gray;
+}
+
+.ServiceDiv_Txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;   
+}
+.ServiceDiv_Txt spans {
+    text-align: center;
+}
+
+.Icon_Size {
+    font-size: 2em;
+    height: 2.5em;
+    width: 2.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.Icon_BG1 {
+    background-color: lightgray;
+    /* filter: invert(0%); */
+    transition: color,0.5s;
+}
+.Icon_BG1:hover {
+    background-color: rgb(59, 59, 59);
+    /* filter: invert(100%); */
+}
+.Icon_BG2 {
+    background-color:lightgray;
+    /* filter: invert(100%); */
+    transition: color,0.5s;
+}
+.Icon_BG2:hover {
+    background-color: rgb(59, 59, 59);
+    filter: invert(0%);
+}
+
+/*/////////////
+// Portfolio //
+/////////////*/
+
+#SectionPortefolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    min-height: 100vh;
+    background-color: rgb(190, 180, 179);
+}
+#PortefolioTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+}
+
+#PortefolioNavMenu{
+    height: 20vh;
+    width: 100vw;
+    margin:0px;
+    padding:0px 0px 10px 0;
+    display: flex;
+    flex-direction: column-reverse;
+}
+#PortefolioNavMenu ul {
+    display:flex;
+    justify-content: space-evenly;
+    width: 100vw;
+    margin:0px;
+    padding: 0px;
+}
+
+#PortefolioNavMenu ul li {
+    list-style: none;
+    padding: 0px;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-weight: 800;
+    color: rgb(41, 39, 39);
+}
+
+#PortefolioMainDiv {
+    width: 100vw; 
+}
+.PortefolioDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    /* background-color: red; */
+    height: auto;
+    /* position: relative; */
+}
+
+/* #container1 {
+    position: relative;
+    background-color: blue;
+} */
+.PortefolioDiv > div {
+    position:relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style: ridge;
+    border-width: 5px;
+    background-color: black;
+    box-shadow: 5px 4px 2px 0px rgba(0,0,0,0.75);
+}
+.Div_Opaque {
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: white;
+   
+    width: 98%;
+    height: 98%;
+    opacity: 0.0;
+    transition: opacity 1s;
+}  
+
+
+.Div_Opaque:hover {
+    opacity: 0.8;
+}
+
+.Div_Opaque > div {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.PortefolioImg_Size {
+    max-height: 100vh;
+    max-width: 100vw;
+}
+
+.Protfolio_Icon_Size {
+    font-size: 1.5em;
+    height: 2.5em;
+    width: 2.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+
+/*///////////////
+// Testimonial //
+///////////////*/
+
+
+#SectionTestimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    min-height: 100vh;
+
+}
+
+/*///////////
+// OurBlog //
+///////////*/
+
+#SectionOurBlog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    min-height: 100vh;
+}
+
+/*///////////
+// Contact //
+///////////*/
+
+#SectionContact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    min-height: 101vh;
+}
+
+
+
+/*/////////////////
+///////////////////
+// media screen  // 
+///////////////////
+/////////////////*/
+
+
+
+@media screen and (min-width:1050px) {
+    /*////////////
+    // AboutMe  // 
+    ////////////*/
+    #SectionAboutMe {
+        
+        display: flex;
+        flex-direction: row;
+    } 
+
+    #AboutMeImg{
+        /* background-image: url("../img/__hero.jpg"); */
+        min-width: 30%;
+    }
+
+    #AboutMeDiv{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+
+    /*////////////
+    // Services //
+    ////////////*/
+
+    #SectionService_DivService{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .ServiceDiv {
+        flex: 0 1 30vw;
+    }
+
+    #BurgerMenu {
+        display: none;
+    }
+    #NavMenu{
+        display: initial;
+        visibility: initial;
+        width: auto;
+    }
+
+    #NavMenu ul {
+        display:flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        margin:0px;
+        
+        padding: 0px;
+    }
+
+    /*/////////////
+    // Portfolio //
+    /////////////*/
+
+    #PortefolioMainDiv {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    #PortefolioMainDiv > div{
+        flex: 0 1 30%;
+    }
+    .PortefolioDiv {
+        max-width: 32vw;
+    }
+    .PortefolioImg_Size {
+        
+        max-width: 30vw;
+    }
+}

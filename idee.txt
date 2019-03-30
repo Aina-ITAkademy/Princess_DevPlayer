@@ -1,0 +1,2 @@
+Animation : <div1> <div2>,
+div2 reste "|", le div1 disparait de droite a gauche et se transform (font)

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Player</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/Aina_DevPlayer.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/normalize.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800,900|Poppins:200,300,400,500,600,700,800,900"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet"> <!-- Font Press Start 2P -->
+    <script src="js/princess.js"></script>
+</head>
+
+<body onscroll="scrollCtrl(),menuStick()" onclick="menuStick()">
+
+    <!-- INTRO + HEADER -->
+    <header id='headerID' class="PosAbsolute font_super_smash">
+        <div id='TitlePrincess'>
+            DEV-PLAYER
+        </div>
+        <!-- <div id='DivMenu'> -->
+        <div id='BurgerMenu' class="BurgerSize" onclick='burgerClick()'>
+            <i class="fas fa-bars "></i>
+        </div>
+        <div id='NavMenu' class='DispNone'>
+            <ul>
+                <a href="#SectionIntro" id='aIntro'>
+                    <li>Home</li>
+                </a>
+                <a href="#SectionAboutMe" id='aAboutMe'>
+                    <li>Intro</li>
+                </a>
+                <a href="#SectionService" id='aService'>
+                    <li>About</li>
+                </a>
+                <a href="#SectionPortefolio" id='aPortefolio'>
+                    <li>Works</li>
+                </a>
+                <a href="#SectionTestimonial" id='aTestimonial'>
+                    <li>Clients</li>
+                </a>
+                <a href="#SectionOurBlog" id='aOurBlog'>
+                    <li>Blog</li>
+                </a>
+                <a href="#SectionContact" id='aContact'>
+                    <li>Contact</li>
+                </a>
+            </ul>
+        </div>
+    </header>
+
+    <section id='SectionIntro'>
+
+        <div id='TextIntro'>
+            <h1>Hello</h1>
+            <span id="IntroTxt1">I Am a Developper</span>
+            <span id="id=IntroTxt2">Also, I am a Video Game Player</span>
+        </div>
+        <div id='ReseauxDiv' class=''>
+            <a href="https://github.com/Aina-ITAkademy" id='githubIntro'>
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://play.google.com/work/apps/details?id=com.gmail.aina.nary.sudoku&hl=fr" id='playstoreIntro'>
+                <i class="fab fa-google-play"></i>
+            </a>
+            <!-- https://play.google.com/work/apps/details?id=com.gmail.aina.nary.sudoku&hl=fr -->
+            <!-- <i class="fab fa-twitter"></i>
+            <i class="fab fa-linkedin-in"></i>
+            <i class="fab fa-behance"></i>
+            <i class="fab fa-youtube"></i> -->
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT ME -->
+    <section id='SectionAboutMe'>
+        <div id='AboutMeImg'></div>
+        <div id='AboutMeDiv'>
+            <div id='AboutMeTxt'>
+                <h1>Intro.</h1>
+                <h3>UI / UX DEISGN & WEB DEVELOPPER</h3>
+                <p>
+
+                    Je suis un <span class="boldSpan">Developpeur Web & Mobile</span> et un <span class="boldSpan">joueur de jeux vidéo</span>.<br>
+                    Pour le projet de modification de <span>magical princess</span> j'ai choisi comme thème les jeux
+                    vidéos auxquel j'ai joué.
+                </p>
+                <p>
+                    Les images proviennent des jeux "<span class="fontSmash">Super Smash bros</span>"", "<span class="fontZelda">The Legend of zelda : Breath of the wild</span>"
+                    et "<span class="fontIMC">Tree of savior</span>". <br>
+                    Les font utilisés proviennent directement des jeux en question ou des imitations créent par des fans.
+                </p>
+            </div>
+            <div id='AboutMeSkill'>
+
+                <div id="Divskill1" class="DivBackground_back">
+                    <div id="Divskill1_sub" class="DivBackground_front w95 animation-pause ">
+                        <span>Web Design</span> <span>95%</span>
+                    </div>
+                </div>
+                <div id="Divskill2" class="DivBackground_back">
+                    <div id="Divskill2_sub" class="DivBackground_front w80 animation-pause ">
+                        <span>Branding</span> <span>80%</span>
+                    </div>
+                </div>
+                <div id="Divskill3" class="DivBackground_back">
+                    <div id="Divskill3_sub" class="DivBackground_front w90 animation-pause ">
+                        <span>Developpement</span> <span>90%</span>
+                    </div>
+                </div>
+            </div>
+            <div id='AboutMeButtons'>
+                <div id='ButtonCV' class="AboutMeButtons_div">
+                    <p>Download CV</p>
+                </div>
+                <div id='ButtonContact' class="AboutMeButtons_div">Contact Me</div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SERVICE -->
+    <section id='SectionService'>
+        <div id="SectionService_Title">
+            <h1>A Propos.</h1>
+        </div>
+        <div id='SectionService_DivService'>
+            <div id='ServiceDiv1' class="ServiceDiv">
+                <div id='ServiceDiv1_Icon' class='Icon_Size Icon_BG1'>
+                    <i class="fas fa-gamepad"></i>
+                </div>
+                <div id='ServiceDiv1_Txt' class='ServiceDiv_Txt'>
+                    <h3>Console de salon Nintendo</h3>
+                    <spans>Nes, SNES, Nintendo 64, Gamecube, Nintendo Wii, Nintendo WiiU, Nintendo Switch
+                    </spans>
+                </div>
+            </div>
+            <div id='ServiceDiv2' class="ServiceDiv">
+                <div id='ServiceDiv2_Icon' class='Icon_Size Icon_BG2'>
+                        <i class="fas fa-tablet-alt"></i>
+                </div>
+                <div id='ServiceDiv2_Txt' class='ServiceDiv_Txt'>
+                    <h3>Console Portable</h3>
+                    <spans>Game Boy, Game Boy Color, Game Boy Advance, Nintendo DS, Nintendo 3DS
+                    </spans>
+                </div>
+            </div>
+            <div id='ServiceDiv3' class="ServiceDiv">
+                <div id='ServiceDiv3_Icon' class='Icon_Size Icon_BG1'>
+                        <i class="fas fa-globe-europe"></i>
+                </div>
+                <div id='ServiceDiv3_Txt' class='ServiceDiv_Txt'>
+                    <h3>Jeux en ligne</h3>
+                    <spans>Ragnarok Online, World of Warcraft, Tree of Savior
+                    </spans>
+                </div>
+            </div>
+            <div id='ServiceDiv4' class="ServiceDiv">
+                <div id='ServiceDiv4_Icon' class='Icon_Size Icon_BG1'>
+                    <i class="far fa-keyboard"></i>
+                </div>
+                <div id='ServiceDiv4_Txt' class='ServiceDiv_Txt'>
+                    <h3>Language de Programmation</h3>
+                    <spans>C/C++, Java, Python, Ada 95, Matlab, PHP, Javascript
+                    </spans>
+                </div>
+            </div>
+            <div id='ServiceDiv5' class="ServiceDiv">
+                <div id='ServiceDiv5_Icon' class='Icon_Size Icon_BG1'>
+                        <i class="fab fa-windows"></i>
+                </div>
+                <div id='ServiceDiv5_Txt' class='ServiceDiv_Txt'>
+                    <h3>Système d'exploitation</h3>
+                    <spans>Windows xp, Windows vista, Windows seven, Windows 10 <br>
+                            Ubuntu, Debian, Unix Solaris
+                    </spans>
+                </div>
+            </div>
+            <div id='ServiceDiv6' class="ServiceDiv">
+                <div id='ServiceDiv6_Icon' class='Icon_Size Icon_BG1'>
+                        <i class="fas fa-user-graduate"></i>
+                </div>
+                <div id='ServiceDiv6_Txt' class='ServiceDiv_Txt'>
+                    <h3>Diplômes</h3>
+                    <spans>Bac STI Génie Electrotechnique <br>
+                            Bachelor HES-SO Scienes Informatique
+                    </spans>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portefolio -->
+    <section id='SectionPortefolio'>
+        <div id='PortefolioTitle'>
+            <h1>Portefolio.</h1>
+        </div>
+        <div id='PortefolioNavMenu'>
+            <ul>
+                <li class="fontAtarian">All</li>
+                <li class="fontIMC">Tree of Savior</li>
+                <li class='fontSmash'>Super Smash Bros</li>
+                <li class="fontZelda">The legend of Zelda</li>
+            </ul>
+        </div>
+        <div id="PortefolioMainDiv">
+
+            <div id='' class="PortefolioDiv">
+                <div>
+                    <div class="Div_Opaque">
+                        <span class="fontIMC">Tree of Savior</span>
+                        <div>
+                            <div id="" class="Protfolio_Icon_Size Icon_BG1">
+                                <i class="fas fa-unlink "></i>
+                            </div>
+                            <div id="" class="Protfolio_Icon_Size Icon_BG1">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="img/custom_img/tos1.jpg" class="PortefolioImg_Size" />
+                </div>
+            </div>
+
+            <div id='PortefolioDiv2' class="PortefolioDiv">
+                <div>
+                    <div class="Div_Opaque">
+                        <span class="fontSmash">Super Smash Bros</span>
+                        <div>
+                            <div id="" class="Protfolio_Icon_Size Icon_BG1">
+                                <i class="fas fa-unlink "></i>
+                            </div>
+                            <div id="" class="Protfolio_Icon_Size Icon_BG1">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                    <img src="img/custom_img/scene/marioCharizard.jpg" class="PortefolioImg_Size" />
+                </div>
+
+            </div>
+
+
+            <div id='PortefolioDiv3' class="PortefolioDiv">
+                <div>
+                    <div class="Div_Opaque">
+                        <span class="fontIMC">Tree of Savior</span>
+                        <div>
+                            <div id="" class="Protfolio_Icon_Size Icon_BG1">
+                                <i class="fas fa-unlink "></i>
+                            </div>
+                            <div id="" class="Protfolio_Icon_Size Icon_BG1">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="img/custom_img/tos3.jpg" class="PortefolioImg_Size" />
+                </div>
+            </div>
+
+
+            <div id='PortefolioDiv4' class="PortefolioDiv">
+                <div>
+                    <div class="Div_Opaque">
+                        <span class="fontZelda">The Legend of Zelda</span>
+                        <div>
+                            <div id="" class="Protfolio_Icon_Size Icon_BG1">
+                                <i class="fas fa-unlink "></i>
+                            </div>
+                            <div id="" class="Protfolio_Icon_Size Icon_BG1">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="img/custom_img/Zelda1.jpg" class="PortefolioImg_Size" />
+                </div>
+            </div>
+
+
+            <div id='PortefolioDiv5' class="PortefolioDiv">
+                <div>
+                    <div class="Div_Opaque">
+                        <span class="fontZelda">The Legend of Zelda</span>
+                        <div>
+                            <div id="" class="Protfolio_Icon_Size Icon_BG1">
+                                <i class="fas fa-unlink "></i>
+                            </div>
+                            <div id="" class="Protfolio_Icon_Size Icon_BG1">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="img/custom_img/Zelda2.jpg" class="PortefolioImg_Size" />
+                </div>
+            </div>
+
+            <div id='PortefolioDiv6' class="PortefolioDiv">
+                <div>
+                    <div class="Div_Opaque">
+                        <span class="fontSmash">Super Smash Bros</span>
+                        <div>
+                            <div id="" class="Protfolio_Icon_Size Icon_BG1">
+                                <i class="fas fa-unlink "></i>
+                            </div>
+                            <div id="" class="Protfolio_Icon_Size Icon_BG1">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="img/custom_img/sm8.jpg" class="PortefolioImg_Size" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial -->
+    <section id='SectionTestimonial'>
+        <div id='TestimonialTitle'>
+            <h1>Testimonial.</h1>
+        </div>
+        <div id='TestimonialImg'> </div>
+        <div id='TestimonialDiv'>
+            <div id='TestimonialDiv1'>
+                <div id='TestimonialDiv1_Icon'></div>
+                <div id='TestimonialDiv1_Txt'></div>
+            </div>
+            <div id='TestimonialDiv2'>
+                <div id='TestimonialDiv2_Icon'></div>
+                <div id='TestimonialDiv2_Txt'></div>
+            </div>
+            <div id='TestimonialDiv3'>
+                <div id='TestimonialDiv3_Icon'></div>
+                <div id='TestimonialDiv3_Txt'></div>
+            </div>
+            <div id='TestimonialDiv4'>
+                <div id='TestimonialDiv4_Icon'></div>
+                <div id='TestimonialDiv4_Txt'></div>
+            </div>
+            <div id='TestimonialDiv5'>
+                <div id='TestimonialDiv5_Icon'></div>
+                <div id='TestimonialDiv5_Txt'></div>
+            </div>
+            <div id='TestimonialDiv6'>
+                <div id='TestimonialDiv6_Icon'></div>
+                <div id='TestimonialDiv6_Txt'></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OUR BLOG -->
+    <section id='SectionOurBlog'>
+        <h1>Our Blog.</h1>
+        <div id='OurBlog_ImgDiapo'></div>
+        <div id='OurBlog_DotDiapo'></div>
+
+    </section>
+
+    <!-- CONTACT -->
+    <section id='SectionContact'>
+        <h1>Contact Us.</h1>
+        <div id='ContactAddress'>
+            <div id='ContactAdress_Icon'></div>
+            <div id='ContactAdress_Txt'></div>
+        </div>
+        <div id='ContactMail'>
+            <div id='ContactMail_Icon'></div>
+            <div id='ContactMail_Txt'></div>
+        </div>
+        <div id='ContactPhone'>
+            <div id='ContactPhone_Icon'></div>
+            <div id='ContactPhone_Txt'></div>
+        </div>
+        <div id='ContactForm'>
+            <div id='ContactName'></div>
+            <div id='ContactEmail'></div>
+            <div id='ContactMessage'></div>
+            <button type="button" id='ButtonSubmit'>Submit</button>
+        </div>
+    </section>
+    <footer>
+        <div>
+            Copyright 2018 @ Daniels All Rights Reserved
+        </div>
+    </footer>
+</body>
+
+</html>
